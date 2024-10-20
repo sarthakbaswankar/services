@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hover\:rotate-360:hover {
+    transform: rotate(360deg);
+  }
+}
+
+/* Additional styles for the service box */
+.service-box {
+    transform-origin: center; /* Ensures the box rotates from the center */
+    will-change: transform;   /* Optimizes the animation */
+    transition: transform 1s ease-in-out; /* Smooth transition back */
+}
